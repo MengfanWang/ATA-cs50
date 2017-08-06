@@ -17,9 +17,9 @@ bool search(int value, int values[], int n)
     int left = 0;
     int right = n-1;
     // this mid-point computation is used to avoid overflow
-    int mid = (right - left)/2 + left;
     while(left <= right)
     {
+        int mid = (right - left)/2 + left;
         if(values[mid] == value)
         {
             return true;
