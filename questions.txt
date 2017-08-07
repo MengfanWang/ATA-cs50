@@ -1,0 +1,25 @@
+0.  TODO - What is pneumonoultramicroscopicsilicovolcanoconiosis?
+    Is the longest word in this problem set's dictionary
+    
+1.  TODO - According to its man page, what does getrusage do?
+    returns resource usage measures for who
+    
+2.  TODO - Per that same man page, how many members are in a variable of type struct rusage?
+    16
+    
+3.  TODO - Why do you think we pass before and after by reference (instead of by value) to calculate, even though we’re not changing their contents?
+    Because C requires passing structs by reference in functions, because by value, the size would be too big
+
+4.  TODO - Explain as precisely as possible, in a paragraph or more, how main goes about reading words from a file. In other words, 
+    convince us that you indeed understand how that function’s for loop works.
+    It's reading the characters in the file character by character. When it's only alphabetical characters and apostrophes, append 
+    the character to the word[] array until it is not a alphabetical characters or apostrophes but index is larger than 0 which means
+    already found a whole word. If the word becomes larger than what defined as the largest word possible, the word is
+    ignored. If the word has a digit, it is ignored as well.
+
+5.  TODO - Why do you think we used fgetc to read each word’s characters one at a time rather than use fscanf with a format string
+    like "%s" to read whole words at a time? Put another way, what problems might arise by relying on fscanf alone?
+    To account for numerical inputs and other punctuation which we have deemed invalid.
+    
+6.  TODO - Why do you think we declared the parameters for check and load as const (which means "constant")?
+    Because word LENGTH and DICTIONARY are # declared as constants
