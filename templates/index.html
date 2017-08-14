@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+ <p>cash_balance, {{ cash_balance }}
+ <p>grant_total, {{ grant_total }}
+ 
+{% for stock in stocks %}
+ <p>{{ stock }}</p>
+{% endfor %}
+
+{% endblock %}
